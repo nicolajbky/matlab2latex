@@ -1,6 +1,11 @@
 function contour2latex(HT)
-%Creation of a contour plot in latex with contour data from MATLAB
-clc
+% Creation of a contour plot in latex with contour data from MATLAB
+% Input of the function contour2latex(HT) is the Contour Object HT from [C,HT] = contour(...)
+% more details on that under: https://de.mathworks.com/help/matlab/ref/contour.html
+% The Contour Object contains a Contour Matrix, see https://de.mathworks.com/help/matlab/ref/contour-properties.html#prop_ContourMatrix.
+% This structure is used to create LaTeX code to add a plot (\addplot) for each contour line.
+% Copy&Paste that into yout LaTeX file to add the contour lines to your plot.
+
     CM=HT.ContourMatrix';
     len=length(CM);
     p1 = '\addplot [color=black,mark=nomark] coordinates {';
