@@ -1,6 +1,6 @@
 function str = xyfunction2latex(x,y)
 %function str = xyfunction2latex(x,y)
-%   converts the data from x and y into latex form to be pasted.
+%   converts the data from x and y into LaTeX form to be pasted.
 %  x and y must have same length
 
 str='\addplot[] coordinates{';
