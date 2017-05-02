@@ -5,7 +5,7 @@ function str = xyfunction2latex(x,y,f)
 %  if option f is given, the data is resampled with a frequency of f Hz
 
 if nargin > 2
- [x,y] = resample(y,x,f);
+ [y,x] = resample(y,x,f);
 end
 
 str='\addplot[] coordinates{';
